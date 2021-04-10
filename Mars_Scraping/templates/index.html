@@ -29,6 +29,20 @@
             </div>
         </div>
     </div>
+    <!-- Section for Mars Hemispheres-->
+    <div class="row" id="mars-hemispheres">
+        <div class="media">
+            <div class="media-body">
+                <h2>Mars Hemispheres</h2>
+                {% for hemisphere in mars.hemisphere_image_urls %}
+                <div class="col-md-3">
+                    <h4>{{ hemisphere["title"] }}</h4>
+                    <img src='{{ hemisphere["image_url"] }}' class="img-fluid img-thumbnail" />
+                </div>    
+                {%endfor%} 
+            </div>
+        </div>
+    </div>
     <!-- Section for Featured Image and Facts table -->
     <div class="row" id="mars-featured-image">
         <div class="col-md-8">
